@@ -24,9 +24,13 @@ http://www.verious.com/component/weather-forecast/
 Read "Integrating Verious Weather Components in Your Application for iOS.pdf" for detailed component instructions
 
 Register your license using:
-`[[LicenseMgr instance] registerLicense:@"1d42d0f0009b60d76edc01d844d5a657" component:barViewController];
-[[LicenseMgr instance] validateLicenses:self];`
+``` objective-c
+[[LicenseMgr instance] registerLicense:@"1d42d0f0009b60d76edc01d844d5a657" component:barViewController];
+[[LicenseMgr instance] validateLicenses:self];
+```
 
 To use Weather Bar widget:
-`barViewController = [[BarViewController alloc] initWithNibName:fileName bundle:nil];
-[testView addSubview:barViewController.view];`
+``` objective-c
+barViewController = [[BarViewController alloc] initWithNibName:fileName bundle:nil];
+[testView addSubview:barViewController.view];
+```
